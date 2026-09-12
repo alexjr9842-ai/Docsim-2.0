@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Halant-Bold';
+  src: url('/repo-assets/fonts/Halant-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial-Custom-Bold';
+  src: url('/repo-assets/fonts/Arial_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Arial-Custom-Regular';
+  src: url('/repo-assets/fonts/Arial_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Verdana-Custom-Bold';
+  src: url('/repo-assets/fonts/Verdana_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lemon-Tuesday';
+  src: url('/repo-assets/fonts/Lemon_Tuesday.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuktaMalar-Medium';
+  src: url('/repo-assets/fonts/MuktaMalar-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tamil-Unicode';
+  src: url('/repo-assets/fonts/Tamil_Unicode_Elango_Kalyani.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

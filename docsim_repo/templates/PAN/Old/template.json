@@ -1,0 +1,187 @@
+{
+    "doc_name": "pan_card_old",
+    "background_img": "templates/PAN/Old/background.jpg",
+    "defaults": {
+        "split_words": true,
+        "lang": "en",
+        "font_files": {
+            "en": "fonts/Arial_Bold.ttf"
+        },
+        "font_size": 35,
+        "font_color": "rgb(0,0,0)",
+        "upper_case": true
+    },
+
+    "components": {
+        "parent_en": {
+            "type": "text",
+            "filler_mode": "random",
+            "filler_type": "multiline_full_name",
+            "entity": "parent_name",
+            "location": {
+                "x_left": 50,
+                "y_top": 270
+            }
+        },
+        "name_en": {
+            "type": "text",
+            "filler_mode": "random",
+            "filler_type": "child_name",
+            "filler_source": "parent_en",
+            "entity": "name",
+            "location": {
+                "x_left": 50,
+                "y_top": 185
+            }
+        },
+        "dob": {
+            "type": "text",
+            "filler_mode": "regex",
+            "filler_regex": "(0[1-9]|[12][0-9]|3[01])[/](0[1-9]|1[012])[/](19|20)\\d\\d",
+            "entity": "date_of_birth",
+            "location": {
+                "x_left": 50,
+                "y_top": 352
+            }
+        },
+        "pan_id": {
+            "type": "text",
+            "filler_mode": "regex",
+            "filler_regex": "[A-Z][A-Z][A-Z][ABCEFGHLJPT][A-Z][0-9][0-9][0-9][0-9][A-Z]",
+            "entity": "id",
+            "location": {
+                "x_left": 50,
+                "y_top": 444
+            }
+        },
+        "signature": {
+            "type": "text",
+            "filler_mode": "reference",
+            "filler_source": "name_en",
+            "multiline": false,
+            "font_file": "fonts/Lemon_Tuesday.otf",
+            "font_size": 45,
+            "upper_case": false,
+            "location": {
+                "x_left": 44,
+                "y_top": 510
+            }
+        },
+        "photo": {
+            "type": "image",
+            "filler_mode": "random",
+            "image_folder": "images/people/",
+            "location": {
+                "x_left": 739,
+                "y_top": 409
+            },
+            "dims": {
+                "width": 215,
+                "height": 215
+            }
+        }
+    },
+
+    "printed_fields": {
+        "aayakar_hi": {
+            "type": "text",
+            "lang": "hi",
+            "text": "आयकर",
+            "location": {
+                "x_left": 42,
+                "y_top": 38
+            },
+            "dims": {
+                "width": 210,
+                "height": 63
+            }
+        },
+        "vibhag_hi": {
+            "type": "text",
+            "lang": "hi",
+            "text": "विभाग",
+            "location": {
+                "x_left": 275,
+                "y_top": 38
+            },
+            "dims": {
+                "width": 162,
+                "height": 63
+            }
+        },
+        "bharat_hi": {
+            "type": "text",
+            "lang": "hi",
+            "text": "भारत",
+            "location": {
+                "x_left": 646,
+                "y_top": 50
+            },
+            "dims": {
+                "width": 145,
+                "height": 58
+            }
+        },
+        "sarkar_hi": {
+            "type": "text",
+            "lang": "hi",
+            "text": "सरकार",
+            "location": {
+                "x_left": 812,
+                "y_top": 51
+            },
+            "dims": {
+                "width": 182,
+                "height": 58
+            }
+        },
+        "it_dept": {
+            "type": "text",
+            "text": "INCOME TAX DEPARTMENT",
+            "location": {
+                "x_left": 34,
+                "y_top": 115
+            },
+            "dims": {
+                "width": 403,
+                "height": 58
+            }
+        },
+        "GoI": {
+            "type": "text",
+            "text": "GOVT. OF INDIA",
+            "location": {
+                "x_left": 657,
+                "y_top": 119
+            },
+            "dims": {
+                "width": 334,
+                "height": 53
+            }
+        },
+        "PAN_tagline": {
+            "type": "text",
+            "text": "Permanent Account Number",
+            "location": {
+                "x_left": 41,
+                "y_top": 394
+            },
+            "dims": {
+                "width": 365,
+                "height": 42
+            }
+        },
+        "signature_tagline": {
+            "type": "text",
+            "text": "Signature",
+            "location": {
+                "x_left": 41,
+                "y_top": 587
+            },
+            "dims": {
+                "width": 133,
+                "height": 40
+            }
+        }
+    }
+}

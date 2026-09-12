@@ -1,0 +1,6 @@
+{
+  "name": "DocSim Studio",
+  "description": "Interactive web studio to view, edit, and visually design document templates, test synthetic document generation, adjust augmentation configs, and commit changes for AI4Bharat/DocSim.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
